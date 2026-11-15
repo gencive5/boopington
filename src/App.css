@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'outfit100';
+  src: url('./assets/fonts/outfit-latin-100-normal.woff2') format('woff2');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'outfit200';
+  src: url('./assets/fonts/outfit-latin-200-normal.woff2') format('woff2');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'outfit300';
+  src: url('./assets/fonts/outfit-latin-300-normal.woff2') format('woff2');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'outfit400';
+  src: url('./assets/fonts/outfit-latin-400-normal.woff2') format('woff2');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'outfit500';
+  src: url('./assets/fonts/outfit-latin-500-normal.woff2') format('woff2');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'outfit600';
+  src: url('./assets/fonts/outfit-latin-600-normal.woff2') format('woff2');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'outfit700';
+  src: url('./assets/fonts/outfit-latin-700-normal.woff2') format('woff2');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'outfit700';
+  src: url('./assets/fonts/outfit-latin-800-normal.woff2') format('woff2');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'outfit800';
+  src: url('./assets/fonts/outfit-latin-900-normal.woff2') format('woff2');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #E4DFD9;
+  padding: 0;
+  margin: 0;
+  font-family: 'outfit200', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overscroll-behavior: none;
+  width: 100%;
+  height: 100%;
+}
+
+a { color: inherit; text-decoration: none; }
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed; 
+  overflow: hidden; 
+  background: #E4DFD9;
+  padding: 0 !important;   
+  margin: 0 !important;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.title-container {
+  position: fixed;
+  top: 0;
+  right: 1rem;
+  width: auto;
+  height: auto;
+  z-index: 1000;
+  padding: 0.1rem;
+}
+
+.title-text {
+  filter: none;
+  transition: filter 0.3s ease;
+  cursor: default;
+  font-family: 'outfit300', sans-serif;
+  font-size: 2.5rem;
+  color: #1D1F19;
+}
+
+.title-text:hover {
+  filter: url(#outline);
+}
+
+@media screen and (max-width: 769px) {
+.title-container {
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+}
+.title-text {
+    font-size: 1.6rem;
+}
+}
+
+.fullscreen-btn {
+  box-sizing: border-box;
+  position: absolute;
+  height: auto;
+  width: auto;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1000;
+  bottom: 1.5rem;
+  right: 1.5rem;
+
+  font-family: 'outfit200';
+  font-size: 1rem;
+  background-color: #4A3459;
+  color: #E4DFD9;
+  border: none;
+  text-wrap: nowrap;
+}
+
+.fullscreen-commercial {
+  box-sizing: border-box;
+  position: absolute;
+  height: auto;
+  width: auto;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1000;
+  bottom: 1.5rem;
+  right: 1.5rem;
+
+  font-family: 'outfit200';
+  font-size: 1rem;
+  background-color: #4A3459;
+  color: #E4DFD9;
+  border: none;
+  text-wrap: nowrap;
+}
+
+@media screen and (max-width: 769px) {
+.fullscreen-commercial {
+  bottom: 5rem;
+}
+}
+
+
+
+.fullscreen-mode .carousel2,
+.fullscreen-mode .carousel-indicator,
+.fullscreen-mode .title-container,
+.fullscreen-mode .slide-text,
+.fullscreen-mode .menu-icon {
+  display: none;
+}
+
+.about-text{
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  line-height: 2;
+  z-index: 888;
+}
+
+@media screen and (max-width: 769px) {
+.about-text {
+  width: 90%;
+  text-align: left;
+}
+}
+
+
+
+
+/* COLORS
+
+#4A3459  violet 
+#252E40  blue 
+#E4DFD9  white 
+#1D1F19  black
+#6C6E60  green */

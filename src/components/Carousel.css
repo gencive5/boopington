@@ -1,0 +1,237 @@
+/* FIRST CAROUSEL */
+.carousel {
+  height: auto;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none !important;
+}
+
+.carousel-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(80vw, 1066px); 
+  aspect-ratio: 16 / 9;       
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 769px) {
+  .carousel-item-video {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+.carousel-item-video iframe {
+  width: 80%;
+  height: 80%;
+  border: 0;
+}
+
+.carousel-item-video--vertical {
+  width: auto;
+  height: min(70vh, 635px);
+  aspect-ratio: 9 / 16;
+}
+
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: none !important; 
+}
+
+.carousel-item.no-transition {
+  transition: none !important;
+}
+
+.carousel-img {
+  width: 400px;
+  height: 600px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* SECOND CAROUSEL  */
+.carousel2 {
+  height: 100%;
+  position: absolute;
+  right: 90px;
+  bottom: 0;
+  width: 1600px;
+  opacity: 0.67;
+  z-index: 20;
+  filter: blur(50px);
+}
+
+.carousel-bg-img {
+  width: 200%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  filter: saturate(200%) invert(18%) saturate(121%) hue-rotate(32deg) brightness(129%) contrast(123%);
+  /* filter: saturate(100%) invert(14%) sepia(24%) saturate(100%) hue-rotate(211deg) brightness(283%) contrast(93%); */
+  /* filter: grayscale(100%); */
+  /* filter: brightness(2); */
+}
+
+
+@media screen and (max-width: 769px) {
+.carousel-img {
+  width: 70%;
+}
+
+.carousel-bg-img {
+  width: 65%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 15px;
+}
+}
+
+
+
+.slide-text {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  z-index: 998;
+  font-family: 'outfit300';
+  font-size: 1rem;
+  color: #1D1F19;
+}
+
+.slide-commercial {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  z-index: 998;
+  font-family: 'outfit300';
+  font-size: 1rem;
+  color: #1D1F19;
+}
+
+@media screen and (max-width: 769px) {
+.slide-commercial {
+  bottom: 5rem;
+}
+}
+
+.contact-text {
+  position: fixed;
+  width: auto;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  z-index: 998;
+  font-family: 'outfit400';
+  font-size: 1rem;
+  color: #1D1F19;
+}
+
+.contact-commercial {
+  position: fixed;
+  width: auto;
+  bottom: 0.5rem;
+  left: 1rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  z-index: 998;
+  font-family: 'outfit400';
+  font-size: 1rem;
+  color: #1D1F19;
+}
+
+@media screen and (max-width: 769px) {
+.contact-commercial {
+  left: 0;
+  right: 0;
+  font-size: 0.7rem;
+}
+}
+
+.commercial-items {
+  position: fixed;
+  top: 1.2rem;
+  left: 1.5rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  z-index: 998;
+  font-family: 'outfit400';
+  font-size: 1rem;
+  color: #1D1F19;
+  z-index: 9000;
+}
+
+@media screen and (min-width: 769px) {
+.contact-items {
+  top: 1.5rem;
+}
+}
+
+
+
+/* FuLL Screen  */
+.fullscreen-mode {
+  position: fixed;
+  inset: 0;
+  z-index: 9977;
+  background: #1D1F19;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+
+.fullscreen-mode .carousel,
+.fullscreen-mode .carousel-inner,
+.fullscreen-mode .carousel-item,
+.fullscreen-mode .carousel-item-wrapper {
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+
+.fullscreen-mode .carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+}
+
