@@ -5,9 +5,11 @@ import './Carousel.css';
 import c1 from '../assets/images/c1.JPG';
 import c2 from '../assets/images/c2.JPG';
 import c3 from '../assets/images/c3.JPG';
+import c4 from '../assets/images/c4.JPG';
+import c5 from '../assets/images/c5.JPG';
 
 
-const slides = [c1, c2, c3];
+const slides = [c1, c2, c3, c4, c5];
 const SLIDE_COUNT = slides.length;
 const SCROLL_LOCK_MS = 800;
 
