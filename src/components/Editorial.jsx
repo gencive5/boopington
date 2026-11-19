@@ -89,13 +89,13 @@ function Editorial({ fullScreen, toggleFullScreen }) {
           {renderItems('carousel-img')}
         </Carousel>
 
-          <p className="slide-commercial">scroll</p>
+          <p className="slide-txt">scroll</p>
 
         <button
           onClick={toggleFullScreen}
-          className={`fullscreen-commercial ${fullScreen ? 'active' : ''}`}
+          className={`fullscreen-btn ${fullScreen ? 'active' : ''}`}
         >
-          {fullScreen ? 'exit fullscreen' : 'fullscreen'}
+          <p className="fullscreen-txt">{fullScreen ? 'exit fullscreen' : 'fullscreen'}</p>
         </button>
       </Col>
 
@@ -109,7 +109,7 @@ function Editorial({ fullScreen, toggleFullScreen }) {
         {renderItems('carousel-bg-img')}
       </Carousel>
       
-      <Link to="/about" className="commercial-items">About</Link>
+      <Link to="/about" className='menu-items'>About</Link>
       
     </>
   );

@@ -18,7 +18,7 @@ function App() {
   return (
     <Container fluid className={`container ${fullScreen ? 'fullscreen-mode' : ''}`}>
       <Title />
-      <Row className="contact-commercial"> <Col><a href="mailto:audreysoler64@gmail.com">boopington@outlook.com</a></Col> </Row>
+      <Row className="contact"> <Col><a href="mailto:audreysoler64@gmail.com">boopington@outlook.com</a></Col> </Row>
 
       <Routes>
         <Route

@@ -26,7 +26,7 @@ I'm open for collaborations.
     </div>
     </Col>
 
-    <Link to="/" className="commercial-items">Editorial</Link>
+    <Link to="/" className="menu-items">Gallery</Link>
    
     </div>
     

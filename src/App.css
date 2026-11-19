@@ -112,6 +112,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 
+/* title */
+
 .title-container {
   position: fixed;
   top: 0;
@@ -146,61 +148,8 @@ a { color: inherit; text-decoration: none; }
 }
 }
 
-.fullscreen-btn {
-  box-sizing: border-box;
-  position: absolute;
-  height: auto;
-  width: auto;
-  transition: all 0.3s;
-  box-sizing: border-box;
-  cursor: pointer;
-  z-index: 1000;
-  bottom: 1.5rem;
-  right: 1.5rem;
 
-  font-family: 'outfit200';
-  font-size: 1rem;
-  background-color: #4A3459;
-  color: #E4DFD9;
-  border: none;
-  text-wrap: nowrap;
-}
-
-.fullscreen-commercial {
-  box-sizing: border-box;
-  position: absolute;
-  height: auto;
-  width: auto;
-  transition: all 0.3s;
-  box-sizing: border-box;
-  cursor: pointer;
-  z-index: 1000;
-  bottom: 1.5rem;
-  right: 1.5rem;
-
-  font-family: 'outfit200';
-  font-size: 1rem;
-  background-color: #4A3459;
-  color: #E4DFD9;
-  border: none;
-  text-wrap: nowrap;
-}
-
-@media screen and (max-width: 769px) {
-.fullscreen-commercial {
-  bottom: 5rem;
-}
-}
-
-
-
-.fullscreen-mode .carousel2,
-.fullscreen-mode .carousel-indicator,
-.fullscreen-mode .title-container,
-.fullscreen-mode .slide-text,
-.fullscreen-mode .menu-icon {
-  display: none;
-}
+/* about */
 
 .about-text{
   width: 60%;
@@ -221,12 +170,66 @@ a { color: inherit; text-decoration: none; }
 }
 
 
+/* contact */
+
+.contact-text {
+  position: fixed;
+  width: auto;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  z-index: 998;
+  font-family: 'outfit400';
+  font-size: 1rem;
+  color: #1D1F19;
+}
+
+.contact {
+  position: fixed;
+  width: auto;
+  bottom: 0.5rem;
+  left: 1rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  z-index: 998;
+  font-family: 'outfit400';
+  font-size: 1rem;
+  color: #1D1F19;
+}
+
+@media screen and (max-width: 769px) {
+.contact {
+  left: 0;
+  right: 0;
+  font-size: 0.7rem;
+}
+}
 
 
-/* COLORS
+/* menu */
 
-#4A3459  violet 
-#252E40  blue 
-#E4DFD9  white 
-#1D1F19  black
-#6C6E60  green */
+.menu-items {
+  position: fixed;
+  top: 1.2rem;
+  left: 1.5rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  font-family: 'outfit400';
+  font-size: 1rem;
+  color: #1D1F19;
+  z-index: 9000;
+}
+
+@media screen and (min-width: 769px) {
+.menu-items {
+  top: 1.5rem;
+}
+}
