@@ -78,7 +78,7 @@ function Editorial({ fullScreen, toggleFullScreen }) {
 
   return (
     <>
-      <Col className={fullScreen ? 'fullscreen-col' : ''}>
+      {/* <Col className={fullScreen ? 'fullscreen-col' : ''}>
         <Carousel
           interval={null}
           activeIndex={activeIndex}
@@ -97,7 +97,7 @@ function Editorial({ fullScreen, toggleFullScreen }) {
         >
           <p className="fullscreen-txt">{fullScreen ? 'exit fullscreen' : 'fullscreen'}</p>
         </button>
-      </Col>
+      </Col> */}
 
       <Carousel
         interval={null}
