@@ -1,77 +1,35 @@
 @font-face {
-  font-family: 'outfit100';
-  src: url('./assets/fonts/outfit-latin-100-normal.woff2') format('woff2');
+  font-family: 'geist-black';
+  src: url('./assets/fonts/Geist-Black.woff2') format('woff2');
   font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'outfit200';
-  src: url('./assets/fonts/outfit-latin-200-normal.woff2') format('woff2');
+  font-family: 'geist-black-italic';
+  src: url('./assets/fonts/Geist-BlackItalic.woff2') format('woff2');
   font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'outfit300';
-  src: url('./assets/fonts/outfit-latin-300-normal.woff2') format('woff2');
+  font-family: 'geist-regular';
+  src: url('./assets/fonts/Geist-Regular.woff2') format('woff2');
   font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'outfit400';
-  src: url('./assets/fonts/outfit-latin-400-normal.woff2') format('woff2');
+  font-family: 'geist-italic';
+  src: url('./assets/fonts/Geist-Italic.woff2') format('woff2');
   font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'outfit500';
-  src: url('./assets/fonts/outfit-latin-500-normal.woff2') format('woff2');
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'outfit600';
-  src: url('./assets/fonts/outfit-latin-600-normal.woff2') format('woff2');
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'outfit700';
-  src: url('./assets/fonts/outfit-latin-700-normal.woff2') format('woff2');
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'outfit700';
-  src: url('./assets/fonts/outfit-latin-800-normal.woff2') format('woff2');
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'outfit800';
-  src: url('./assets/fonts/outfit-latin-900-normal.woff2') format('woff2');
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
-}
 
 
 html, body {
@@ -86,7 +44,7 @@ body {
   background: #E4DFD9;
   padding: 0;
   margin: 0;
-  font-family: 'outfit200', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'geist-regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   overscroll-behavior: none;
   width: 100%;
   height: 100%;
@@ -128,7 +86,7 @@ a { color: inherit; text-decoration: none; }
   filter: none;
   transition: filter 0.3s ease;
   cursor: default;
-  font-family: 'outfit300', sans-serif;
+  font-family: 'geist-black', sans-serif;
   font-size: 2.5rem;
   color: #1D1F19;
 }
@@ -160,6 +118,8 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
   line-height: 2;
   z-index: 888;
+  font-family: 'geist-black-italic';
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 769px) {
@@ -182,7 +142,7 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
   text-decoration: none;
   z-index: 998;
-  font-family: 'outfit400';
+  font-family: 'geist-black-italic';
   font-size: 1rem;
   color: #1D1F19;
 }
@@ -197,7 +157,7 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
   text-decoration: none;
   z-index: 998;
-  font-family: 'outfit400';
+  font-family: 'geist-black-italic';
   font-size: 1rem;
   color: #1D1F19;
 }
@@ -222,7 +182,7 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
   text-decoration: none;
   z-index: 1;
-  font-family: 'outfit400';
+  font-family: 'geist-black';
   font-size: 1rem;
   color: #1D1F19;
   z-index: 9000;
