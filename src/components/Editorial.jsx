@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { Carousel, Col, Row } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 import { useLocation, Link } from 'react-router-dom';
 import './Carousel.css';
 import c1 from '../assets/images/c1.JPG';
@@ -7,13 +7,14 @@ import c2 from '../assets/images/c2.JPG';
 import c3 from '../assets/images/c3.JPG';
 import c4 from '../assets/images/c4.JPG';
 import c5 from '../assets/images/c5.JPG';
+import c6 from '../assets/images/c6.JPG';
 
 
-const slides = [c1, c2, c3, c4, c5];
+const slides = [c1, c2, c3, c4, c5, c6];
 const SLIDE_COUNT = slides.length;
 const SCROLL_LOCK_MS = 800;
 
-function Editorial({ fullScreen, toggleFullScreen }) {
+function Editorial() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [canScroll, setCanScroll] = useState(true);
 
@@ -47,12 +48,6 @@ function Editorial({ fullScreen, toggleFullScreen }) {
     };
 
     const handleKeydown = (event) => {
-      if (event.key === 'Escape' && fullScreen) {
-        toggleFullScreen();
-        return;
-      }
-      if (!canScroll || fullScreen) return;
-
       if (event.key === 'ArrowUp') goPrevious();
       else if (event.key === 'ArrowDown') goNext();
     };
@@ -64,7 +59,7 @@ function Editorial({ fullScreen, toggleFullScreen }) {
       window.removeEventListener('wheel', handleScroll);
       window.removeEventListener('keydown', handleKeydown);
     };
-  }, [canScroll, fullScreen, isHomePage, goNext, goPrevious, toggleFullScreen]);
+  }, [canScroll, isHomePage, goNext, goPrevious]);
 
   // shared Carousel.Item list factory
   const renderItems = (imgClassName) =>
@@ -78,27 +73,6 @@ function Editorial({ fullScreen, toggleFullScreen }) {
 
   return (
     <>
-      {/* <Col className={fullScreen ? 'fullscreen-col' : ''}>
-        <Carousel
-          interval={null}
-          activeIndex={activeIndex}
-          indicators={false}
-          onSelect={(i) => setActiveIndex(i)}
-          className="carousel slide transform carousel-fade"
-        >
-          {renderItems('carousel-img')}
-        </Carousel>
-
-          <p className="slide-txt">scroll</p>
-
-        <button
-          onClick={toggleFullScreen}
-          className={`fullscreen-btn ${fullScreen ? 'active' : ''}`}
-        >
-          <p className="fullscreen-txt">{fullScreen ? 'exit fullscreen' : 'fullscreen'}</p>
-        </button>
-      </Col> */}
-
       <Carousel
         interval={null}
         activeIndex={activeIndex}

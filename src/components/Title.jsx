@@ -17,9 +17,9 @@ const [isHovered, setIsHovered] = useState(false);
       <svg>
     <defs>
     <filter id="outline">
- <feFlood floodColor="#146610" floodOpacity="0.9" result="RED" />
-      <feFlood floodColor="#6C6E60" floodOpacity="0.6" result="GREEN" />
-      <feFlood floodColor="#252E40" floodOpacity="0.6" result="BLUE" />
+ <feFlood floodColor="#c21f83" floodOpacity="0.9" result="RED" />
+      <feFlood floodColor="#5e29f1" floodOpacity="0.6" result="GREEN" />
+      <feFlood floodColor="#83e962" floodOpacity="0.6" result="BLUE" />
       <feComposite operator="in" in="RED" in2="SourceAlpha" result="RED_TEXT"/>
       <feComposite operator="in" in="GREEN" in2="SourceAlpha" result="GREEN_TEXT"/>
       <feComposite operator="in" in="BLUE" in2="SourceAlpha" result="BLUE_TEXT"/>
