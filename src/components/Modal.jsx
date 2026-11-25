@@ -13,11 +13,11 @@ function Modal () {
   return (
   <>
   
-  <button 
+  <p 
   onClick={toggleModal}
   className="about-tab">
-   {toggleModal} open
-  </button>
+    {modal ? 'close' : 'about'}
+  </p>
 
 {modal && (
   <div className="about">

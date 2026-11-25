@@ -234,6 +234,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 1rem;
   color: #AA0A27;
   z-index: 9000;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 769px) {
