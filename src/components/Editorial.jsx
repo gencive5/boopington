@@ -75,7 +75,7 @@ function Editorial() {
         activeIndex={activeIndex}
         indicators={false}
         onSelect={(i) => setActiveIndex(i)}
-        className="carousel2 slide transform carousel-fade"
+        className="carousel2 transform carousel-fade"
       >
         {renderItems('carousel-bg-img')}
       </Carousel>

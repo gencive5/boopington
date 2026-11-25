@@ -14,7 +14,7 @@ function Toggle(){
 return(
     <button 
     // className="toggle fullscreen-btn"
-    className={`fullscreen-btn ${stateCheck}`}
+    className={`boop-btn ${stateCheck}`}
     onClick={handleClick}
     >Boopington</button>
 )
