@@ -144,3 +144,6 @@
 }
 
 
+body:has(.fullscreen-btn.active) .carousel2 {
+  filter: blur(0px);
+}
