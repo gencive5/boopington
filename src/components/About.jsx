@@ -14,7 +14,7 @@ I'm a photographer based in Talence.
 <br/>
 I'm open for work or collaborations.
     </p>
-    <div className="carousel2">
+    {/* <div className="carousel2">
           <div className="carousel-inner">
             <div className="carousel-item active">
               <div className="carousel-item-wrapper">
@@ -22,7 +22,7 @@ I'm open for work or collaborations.
               </div>
             </div>
           </div>
-    </div>
+    </div> */}
     </Col>
 
     <Link to="/" className="menu-items">Gallery</Link>
