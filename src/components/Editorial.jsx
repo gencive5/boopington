@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Carousel } from 'react-bootstrap';
-import { useLocation, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Carousel.css';
 import c1 from '../assets/images/c1.JPG';
 import c2 from '../assets/images/c2.JPG';

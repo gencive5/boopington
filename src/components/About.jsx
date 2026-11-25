@@ -1,10 +1,9 @@
 import { Col } from 'react-bootstrap';
 import a1 from '../assets/images/c1.JPG';
-import { useLocation, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function About () {
 
-  const location = useLocation();
   return (
 
     <div>
