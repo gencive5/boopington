@@ -25,7 +25,7 @@ I'm open for work or collaborations.
     </div> */}
     </Col>
 
-    <Link to="/" className="menu-items">Gallery</Link>
+    {/* <Link to="/" className="menu-items">Gallery</Link> */}
    
     </div>
     

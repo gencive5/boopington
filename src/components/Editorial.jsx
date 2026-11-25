@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Carousel } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import './Carousel.css';
 import c1 from '../assets/images/c1.JPG';
 import c2 from '../assets/images/c2.JPG';
@@ -80,8 +79,6 @@ function Editorial() {
       >
         {renderItems('carousel-bg-img')}
       </Carousel>
-      
-      <Link to="/about" className='menu-items'>About</Link>
       
     </>
   );

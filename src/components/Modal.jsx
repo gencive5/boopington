@@ -21,8 +21,10 @@ function Modal () {
 
 {modal && (
   <div className="about">
-    <div className="text-about">
-      bla bla bla
+    <div className="about-text">
+      I'm a photographer based in Talence.
+      <br/>
+      I'm open for work or collaborations.
     </div>
   </div>
 )}
