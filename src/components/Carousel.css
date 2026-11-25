@@ -103,35 +103,8 @@
 }
 
 
-/* FuLL Screen  */
-.fullscreen-mode {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: #1D1F19;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  flex: 0 0 100%;
-}
 
-.fullscreen-mode .carousel,
-.fullscreen-mode .carousel-inner,
-.fullscreen-mode .carousel-item,
-.fullscreen-mode .carousel-item-wrapper {
-  width: 100vw;
-  height: 100vh;
-  z-index: 999;
-}
 
-.fullscreen-mode .carousel-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; 
-}
 
 
 .fullscreen-btn {
@@ -166,13 +139,4 @@
   z-index: 1000;
 }
 
-
-
-.fullscreen-mode .carousel2,
-.fullscreen-mode .carousel-indicator,
-.fullscreen-mode .title-container,
-.fullscreen-mode .slide-text,
-.fullscreen-mode .menu-items {
-  display: none;
-}
 

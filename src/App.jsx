@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Editorial from './components/Editorial';
 import Title from './components/Title.jsx';
@@ -7,10 +7,6 @@ import About from './components/About.jsx';
 
 
 function App() {
-
-  const location = useLocation();
-  const isHomePage = location.pathname === '/';
-
 
   return (
     <Container fluid className="container">

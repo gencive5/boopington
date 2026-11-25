@@ -18,9 +18,6 @@ function Editorial() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [canScroll, setCanScroll] = useState(true);
 
-  const location = useLocation();
-  const isHomePage = location.pathname === '/';
-
   const goNext = useCallback(() => {
     setActiveIndex(i => (i + 1) % SLIDE_COUNT);
   }, []);
@@ -59,7 +56,7 @@ function Editorial() {
       window.removeEventListener('wheel', handleScroll);
       window.removeEventListener('keydown', handleKeydown);
     };
-  }, [canScroll, isHomePage, goNext, goPrevious]);
+  }, [canScroll, goNext, goPrevious]);
 
   // shared Carousel.Item list factory
   const renderItems = (imgClassName) =>
