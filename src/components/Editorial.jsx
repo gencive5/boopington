@@ -68,6 +68,7 @@ function Editorial() {
       </Carousel.Item>
     ));
 
+
   return (
     <>
       <Carousel

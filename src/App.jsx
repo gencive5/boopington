@@ -4,12 +4,14 @@ import './App.css';
 import Editorial from './components/Editorial';
 import Title from './components/Title.jsx';
 import About from './components/About.jsx';
+import Toggle from './Toggle.jsx';
 
 
 function App() {
 
   return (
     <Container fluid className="container">
+      <Toggle/>
       <Title />
       <Row className="contact"> <Col><a href="mailto:audreysoler64@gmail.com">boopington@outlook.com</a></Col> </Row>
 

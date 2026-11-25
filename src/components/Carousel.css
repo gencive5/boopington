@@ -108,8 +108,29 @@
   color: #E4DFD9;
   border: none;
   text-wrap: nowrap;
+}
+
+.fullscreen-btn.active {
+  box-sizing: border-box;
+  position: absolute;
+  height: auto;
+  width: auto;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 999;
+  bottom: 1.5rem;
+  right: 1.5rem;
+
+  font-family: 'outfit200';
+  font-size: 1rem;
+  background-color: #611b90;
+  color: #E4DFD9;
+  border: none;
+  text-wrap: nowrap;
   filter: blur(10px);
 }
+
 
 @media screen and (max-width: 769px) {
 .fullscreen-btn {
