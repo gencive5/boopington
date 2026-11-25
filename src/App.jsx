@@ -12,7 +12,7 @@ function App() {
   return (
     <Container fluid className="container">
       <Toggle/>
-      <Title />
+      {/* <Title /> */}
       <p className='slide-txt'> scroll </p>
       <Row className="contact"> <Col><a href="mailto:boopington@outlook.com">boopington@outlook.com</a></Col> </Row>
 
