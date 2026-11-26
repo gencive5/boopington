@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import './App.css';
 import Editorial from './components/Editorial';
-import Toggle from './Toggle.jsx';
+import Toggle from './components/Toggle.jsx';
 import Modal from './components/Modal.jsx';
 
 

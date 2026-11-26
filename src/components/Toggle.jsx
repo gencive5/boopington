@@ -1,5 +1,6 @@
-import './App.css';
+import '../App.css';
 import { useState } from 'react';
+import logo from '../assets/logos/LB-orange-popsicle.svg';
 
 function Toggle(){
 
@@ -12,11 +13,10 @@ function Toggle(){
     let stateCheck = btnState ? 'active' : '';
 
 return(
-    <button 
-    // className="toggle fullscreen-btn"
+    <img src={logo} alt="Logo" 
     className={`boop-btn ${stateCheck}`}
     onClick={handleClick}
-    >Boopington</button>
+    />
 )
 
 }
