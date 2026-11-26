@@ -24,7 +24,7 @@ function Modal () {
     <div className="about-text">
       I'm a photographer based in Talence.
       <br/>
-      I'm open for work or collaborations.
+      I'm open for work and collaborations.
     </div>
   </div>
 )}

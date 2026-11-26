@@ -69,6 +69,7 @@
   font-family: 'geist-regular';
   font-size: 1rem;
   color: #AA0A27;
+  letter-spacing: 0.2rem;
 }
 
 @media screen and (max-width: 769px) {
