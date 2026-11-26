@@ -35,15 +35,6 @@
   filter: blur(50px);
 }
 
-/* .carousel-item-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-}
- */
-
 
 .carousel-bg-img {
   width: 100%;
@@ -63,9 +54,9 @@
 }
 
 
-/* slide text */
+/* scroll text */
 
-.slide-txt {
+.scroll-txt {
   position: fixed;
   bottom: 1.5rem;
   left: 0;
@@ -81,53 +72,46 @@
 }
 
 @media screen and (max-width: 769px) {
-.slide-txt {
+.scroll-txt {
   bottom: 5rem;
 }
 }
 
-
-
-
-
+/* logo & toggle */
 
 .boop-btn {
-  box-sizing: border-box;
-  position: absolute;
+  position: fixed;
+  top: 0.5rem;
+  right: 1rem;
+  width: 30%;
   height: auto;
-  width: auto;
-  transition: all 0.3s;
-  box-sizing: border-box;
-  cursor: pointer;
-  z-index: 999;
-  bottom: 1.5rem;
-  right: 1.5rem;
-
-  font-family: 'geist-black';
-  font-size: 1rem;
-  background-color: #ad6fd5;
-  color: #E4DFD9;
-  border: none;
-  text-wrap: nowrap;
+  z-index: 1000;
+  padding: 0.1rem;
 }
 
 .boop-btn.active {
-  box-sizing: border-box;
-  position: absolute;
+  position: fixed;
+  top: 0.5rem;
+  right: 1rem;
+  width: 30%;
   height: auto;
-  width: auto;
-  transition: all 0.3s;
-  box-sizing: border-box;
-  cursor: pointer;
-  z-index: 999;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  border: none;
-  text-wrap: nowrap;
+  z-index: 1000;
+  padding: 0.1rem;
   filter: blur(10px);
+}
+
+@media screen and (max-width: 769px) {
+.boop-btn {
+  width: 60%;
+}
+
+.boop-btn.active {
+  width: 60%;
+}
 }
 
 
 body:has(.boop-btn.active) .carousel2 {
   filter: blur(0px);
 }
+

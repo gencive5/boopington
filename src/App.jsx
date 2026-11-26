@@ -1,8 +1,8 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import './App.css';
-import Editorial from './components/Editorial';
+import Catrousel from './components/Catrousel.jsx';
 import Toggle from './components/Toggle.jsx';
-import Modal from './components/Modal.jsx';
+import About from './components/About.jsx';
 
 
 function App() {
@@ -11,10 +11,10 @@ function App() {
     <Container fluid className="container">
 
       <Toggle/>
-      <Modal/>
-      <p className='slide-txt'> scroll </p>
+      <About/>
+      <p className='scroll-txt'> scroll </p>
       <Row className="contact"> <Col><a href="mailto:boopington@outlook.com">boopington@outlook.com</a></Col> </Row>
-      <Editorial/>
+      <Catrousel/>
 
     </Container>
   );

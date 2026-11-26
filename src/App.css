@@ -70,43 +70,6 @@ a { color: inherit; text-decoration: none; }
 }
 
 
-/* title */
-
-.title-container {
-  position: fixed;
-  top: 0;
-  right: 1rem;
-  width: auto;
-  height: auto;
-  z-index: 1000;
-  padding: 0.1rem;
-}
-
-.title-text {
-  filter: none;
-  transition: filter 0.3s ease;
-  cursor: default;
-  font-family: 'geist-black', sans-serif;
-  font-size: 2.5rem;
-  color: #AA0A27;
-}
-
-.title-text:hover {
-  filter: url(#outline);
-}
-
-@media screen and (max-width: 769px) {
-.title-container {
-  top: 0;
-  right: 0;
-  padding: 0.5rem;
-}
-.title-text {
-    font-size: 1.6rem;
-}
-}
-
-
 
 /* contact */
 

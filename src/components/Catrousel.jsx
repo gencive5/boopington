@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Carousel } from 'react-bootstrap';
-import './Carousel.css';
+import './Catrousel.css';
 import c1 from '../assets/images/c1.JPG';
 import c2 from '../assets/images/c2.JPG';
 import c3 from '../assets/images/c3.JPG';
@@ -13,7 +13,7 @@ const slides = [c1, c2, c3, c4, c5, c6];
 const SLIDE_COUNT = slides.length;
 const SCROLL_LOCK_MS = 800;
 
-function Editorial() {
+function Catrousel() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [canScroll, setCanScroll] = useState(true);
 
@@ -84,4 +84,4 @@ function Editorial() {
   );
 }
 
-export default Editorial;
+export default Catrousel;
